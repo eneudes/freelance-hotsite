@@ -1,11 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>hotsite</title>
+  </head>
+  <body class="font-Inter bg-slate-400">
+    <div class="container mx-auto"> <!--div container-->
+      <!--inicio do header-->
+      <header class="w-full h-72 flex bg-sky-900 justify-between items-center">
+        <div class="w-2/6 pl-10">
+          <h1 class="text-5xl font-black text-slate-50 uppercase">
+            SAIBA QUAL
+            UNIDADE DE SAÚDE
+            PROCURAR:</h1>
+        </div>
+        <div class="w-2/6 flex items-center justify-center">
+          <div
+            class="size-64 bg-slate-50 rounded-full flex justify-center items-center">
+            <img
+              src="./assets/icons/logo-amapa.png"
+              alt="logo do GEA"
+              class="size-32">
+          </div>
+        </div>
+        <div class="pr-10">
+          <ul class="flex justify-around gap-3">
+            <a href="#">
+              <li
+                class="size-28 rounded-full bg-teal-500 flex justify-center items-center">
+                <img src="./assets/icons/monitor.png" alt="#"
+                  class="size-[85px]">
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="size-28 rounded-full bg-teal-500 flex justify-center items-center">
+                <img src="./assets/icons/localizacao.png" alt="#"
+                  class="size-[85px]">
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="size-28 rounded-full bg-teal-500 flex justify-center items-center">
+                <img src="./assets/icons/ficha.png" alt="#"
+                  class="size-[85px]">
+              </li>
+            </a>
+            <a href="#">
+              <li
+                class="size-28 rounded-full bg-teal-500 flex justify-center items-center">
+                <img src="./assets/icons/cadastro.png" alt="#"
+                  class="size-[85px]">
+              </li>
+            </a>
+
+          </ul>
+        </div>
+      </header>
+      <!--inicio do nav-->
+      <nav class="w-full">
+        <ul class="flex">
+          <a href="#"
+            class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
+            <li class=" flex p-5 h-20 gap-2 items-center bg-yellow-600">
+              <span class="size-12 p-6 bg-white rounded-full"></span>
+              ATENDIMENTOS
+              REALIZADOS NAS UBSs
+            </li>
+          </a>
+          <a href="#"
+            class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
+            <li class=" flex p-5 h-20 gap-2 items-center bg-yellow-500">
+              <span class="size-12 p-6 bg-white rounded-full"></span>
+              QUANDO PROCURAR
+              UMA UBS
+            </li>
+          </a>
+          <a href="#"
+            class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
+            <li class=" flex p-5 h-20 gap-2 items-center bg-emerald-400">
+              <span class="size-12 p-6 bg-white rounded-full"></span>
+              ATENDIMENTOS
+              REALIZADOS NO HE
+            </li>
+          </a>
+          <a href="#"
+            class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
+            <li class=" flex p-5 h-20 gap-2 items-center bg-emerald-500">
+              <span class="size-12 p-6 bg-white rounded-full"></span>
+              QUANDO<br />
+              PROCURAR O HE
+            </li>
+          </a>
+          <a href="#"
+            class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
+            <li class=" flex p-5 h-20 gap-2 items-center bg-emerald-700">
+              <span class="size-12 p-6 bg-white rounded-full"></span>
+              ATENDIMENTOS
+              REALIZADOS NO HCA
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <main class="w-full">
+        <img src="assets/fundo-section.png"
+          alt="imagem da médica segurando o bebe" class="w-full">
+        <div class="w-full h-20 bg-sky-900 flex gap-3 p-5 ">
+          <span class="size-12 p-6 bg-white rounded-full"></span>
+          <p class="text-left text-white text-lg font-medium"> O Governo do
+            Estado está trabalhando para ampliar e melhorar o sistema de saúde
+            do Amapá. E para que o atendimento seja ainda mais eficiente, é
+            preciso que você
+            procure a unidade correta, a depender dos sintomas que está
+            sentindo. Por isso, preparamos este site para orientar qual unidade
+            de saúde você deve procurar.</p>
+        </div>
+      </main>
+      <section class="flex">
+        <div class="w-1/2 p-10 flex flex-col gap-6 bg-yellow-600">
+          <p class="border border-white p-5 text-white"> 
+            UNIDADE BÁSICA DE SAÚDE – UBS<br/>
+            HORÁRIO DE ATENDIMENTO: DE SEGUNDA A SEXTA, DAS 8H ÀS 19H.</p>
+          <div class="flex gap-3 items-center">
+            <span class="size-28 p-6 bg-blue-950 rounded-full"></span>
+            <h2 class="text-blue-950">ATENDIMENTOS
+              REALIZADOSNAS UBSs:</h2>
+          </div>
+          <ul class="border border-white text-white p-5">
+            <li>• Consultas médicas e multiprofissional (enfermagem, nutrição,
+              psicologia, etc) </li>
+            <li>• Inalações </li>
+            <li>• Injeções </li>
+            <li>• Curativos </li>
+            <li>• Vacinas </li>
+            <li>• Coleta de exames laboratoriais</li>
+            <li>• Coleta de PCCU </li>
+            <li>• Tratamento odontológico</li>
+            <li>• Encaminhamentos para especialidades</li>
+            <li>• Fornecimento de medicação básica</li>
+          </ul>
+        </div>
+        <div class="w-1/2 bg-yellow-500">
+
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
