@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
   <title>hotsite</title>
 </head>
 
-<body class="font-Inter box-border scroll-smooth">
+<body class="font-Inter text-white box-border">
   <!--div container-->
   <div class="container flex flex-col mx-auto max-w-full">
     <!--inicio do header-->
@@ -26,78 +26,85 @@
       </div>
 
       <div class="w-2/6 flex items-center justify-center">
-        <div class="size-72 bg-slate-50 rounded-full flex justify-center items-center">
+        <div class="size-72 relative bg-slate-50 rounded-full flex justify-center items-center">
           <img src="./assets/icons/logo-amapa.png" alt="logo do GEA" class="size-40">
+          <img src="./assets/icons/cursor.png" class="absolute right-[-60px] bottom-0">
         </div>
       </div>
 
       <div class="w-2/6">
-        <div class="flex gap-5">
-          <a href="#link-01" class="size-28 rounded-full bg-teal-500 flex justify-center items-center">
-            <img src="./assets/icons/monitor.png" alt="#" class="size-28 rounded-full p-1 w-full">
+        <nav class="flex gap-5">
+          <a href="#link-01" class=" size-28 rounded-full bg-teal-500 flex justify-center items-center">
+            <img src="./assets/svg/monitor.svg" alt="#" class=" size-20">
           </a>
           <a href="#home" class="size-28 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/icons/localizacao.png" alt="#" class="size-28 rounded-full p-1 w-full">
+              src="./assets/svg/localizacao.svg" alt="#" class="size-20">
           </a>
           <a href="#home" class="size-28 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/icons/ficha.png" alt="#" class="size-28 rounded-full p-1 w-full">
+              src="./assets/svg/ficha.svg" alt="#" class="size-20">
           </a>
           <a href="#home" class="size-28 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/icons/cadastro.png" alt="#" class="size-28 rounded-full p-1 w-full">
+              src="./assets/svg/cadastro.svg" alt="#" class="size-20">
           </a>
-        </div>
+          </navs>
       </div>
 
     </header>
     <!--inicio do nav-->
-    <nav class="w-full">
-      <ul class="flex flex-auto flex-wrap">
-        <a href="#" class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
-          <li class=" relative flex p-5 h-20 gap-2 items-center bg-yellow-600">
-            <span class="size-12 p-6 bg-white rounded-full"></span>
-            ATENDIMENTOS
-            REALIZADOS NAS UBSs
-            <span
-              class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-600"></span>
-          </li>
-        </a>
-        <a href="#" class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
-          <li class=" relative flex p-5 h-20 gap-2 items-center bg-yellow-500">
-            <span class="size-12 p-6 bg-white rounded-full"></span>
-            QUANDO PROCURAR
-            UMA UBS
-            <span
-              class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-500"></span>
-          </li>
-        </a>
-        <a href="#" class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
-          <li class="relative flex p-5 h-20 gap-2 items-center bg-emerald-400">
-            <span class="size-12 p-6 bg-white rounded-full"></span>
-            ATENDIMENTOS
-            REALIZADOS NO HE
-            <span
-              class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-400"></span>
-          </li>
-        </a>
-        <a href="#" class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
-          <li class="relative flex p-5 h-20 gap-2 items-center bg-emerald-500">
-            <span class="size-12 p-6 bg-white rounded-full"></span>
-            QUANDO<br />
-            PROCURAR O HE
-            <span
-              class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-500"></span>
-          </li>
-        </a>
-        <a href="#" class="w-1/5 text-base text-left font-semibold leading-5 text-slate-50">
-          <li class="relative flex p-5 h-20 gap-2 items-center bg-emerald-700">
-            <span class="size-12 p-6 bg-white rounded-full"></span>
-            ATENDIMENTOS
-            REALIZADOS NO HCA
-            <span
-              class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
-          </li>
-        </a>
-      </ul>
+    <nav class="w-full flex flex-auto flex-wrap">
+
+      <a href="#"
+        class="w-1/5 flex gap-2 p-3 items-center relative text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-600">
+
+        <span class="flex items-center justify-center size-14 bg-white rounded-full">
+          <img src="assets/svg/arrow2.svg" class="bg-auto size-10">
+        </span>
+        ATENDIMENTOS<br />
+        REALIZADOS NAS UBSs
+        <span
+          class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-600"></span>
+      </a>
+      <a href="#"
+        class="w-1/5 flex gap-2 items-center p-3 relative text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-500">
+        <span class="flex items-center justify-center size-14 bg-white rounded-full">
+          <img src="assets/svg/arrow2.svg" class="bg-auto size-10">
+        </span>
+        QUANDO PROCURAR<br/>
+        UMA UBS
+        <span
+          class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-500"></span>
+      </a>
+      <a href="#"
+        class="w-1/5 flex gap-2 items-center p-3 relative text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-400">
+        <span class="flex items-center justify-center size-14 bg-white rounded-full">
+          <img src="assets/svg/arrow2.svg" class="bg-auto size-10">
+        </span>
+          ATENDIMENTOS<br/>
+          REALIZADOS NO HE
+          <span
+            class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-400"></span>
+      </a>
+      <a href="#"
+        class="w-1/5 flex gap-2 items-center p-3 relative text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-500">
+        <span class="flex items-center justify-center size-14 bg-white rounded-full">
+          <img src="assets/svg/arrow2.svg" class="bg-auto size-10">
+        </span>
+          QUANDO<br />
+          PROCURAR O HE
+          <span
+            class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-500"></span>
+        
+      </a>
+      <a href="#"
+        class="w-1/5 flex gap-2 items-center p-3 relative text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-700">
+        <span class="flex items-center justify-center size-14 bg-white rounded-full">
+          <img src="assets/svg/arrow2.svg" class="bg-auto size-10">
+        </span>
+          ATENDIMENTOS<br/>
+          REALIZADOS NO HCA
+          <span
+            class="absolute left-5 top-20 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
+      </a>
     </nav>
     <!--inicio do main-->
     <main class="w-full">
@@ -339,8 +346,8 @@
 
     </section>
     <!--rodape pagina footer-->
-    <footer class="w-full h-72 bg-sky-900 ">
-      <div class="flex flex-row justify-end w-5xl h-6">
+    <footer class="relative w-full h-72 bg-sky-900 ">
+      <div class="absolute flex bottom-0 right-0 w-3/4 h-6">
         <div class="w-1/5 bg-sky-500"></div>
         <div class="w-[30%] bg-emerald-500"></div>
         <div class="w-1/2 bg-yellow-500"></div>
