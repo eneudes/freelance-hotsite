@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +10,30 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>hotsite</title>
 </head>
-
 <body class="font-Inter text-white box-border">
   <!--div container-->
   <div class="container flex flex-col mx-auto max-w-full">
     <!--inicio do header-->
     <header class="w-full py-5 flex flex-row bg-sky-800 justify-between items-center ">
       <!--h1 principal header-->
-      <div class="w-[40%] pl-20 text-left">
-        <h1 class=" text-6xl leading-tight font-black text-white uppercase">
+      <div class="lg:w-[40%] lg:pl-20 text-left">
+        <h1 class=" lg:text-6xl leading-tight font-black text-white uppercase">
           SAIBA QUAL<br />
           UNIDADE DE SAÚDE<br />
           PROCURAR:</h1>
       </div>
       <!--logo governo amapa-->
       <div class="flex items-center justify-center ">
-        <div class="size-72 relative bg-slate-50 rounded-full flex justify-center items-center">
-          <img src="./assets/icons/logo-amapa.png"  class="size-40">
-          <img src="./assets/icons/cursor.png" class="absolute right-[-60px] bottom-0">
-        </div>
+        <button class="lg:size-72 p-7 relative bg-slate-50 rounded-full flex justify-center items-center">
+          <img src="./assets/icons/logo-amapa.png"  class="">
+          <img src="./assets/icons/cursor.png" class="absolute size-12 -right-6 lg:right-[-60px] bottom-0">
+        </button>
       </div>
+      
       <!--menu header redondo-->
       <div class="w-[40%] ">
-        <nav class="flex justify-center pt-20 gap-3">
-          <a href="#urgencia-emergencia" class="size-36 rounded-full bg-teal-400 flex justify-center items-center">
+        <nav class="flex justify-center  lg:pt-20 gap-3">
+          <a href="#urgencia-emergencia" class="size-36  rounded-full bg-teal-400 flex justify-center items-center">
             <img src="./assets/svg/monitor.svg"></a>
           <a href="#hospital-santana" class="size-36 rounded-full bg-teal-400 flex justify-center items-center"><img
               src="./assets/svg/localizacao.svg" alt="#">
@@ -54,17 +53,17 @@
       </div>
     </header>
     <!--inicio do nav-->
-    <nav class="w-full flex flex-wrap">
+    <nav class="w-full lg:flex">
       <a href="#atendimento-upa"
-        class="w-1/5 flex p-5 items-center relative xl:text-sm 2xl:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-600">
+        class="lg:w-1/5 flex lg:p-5 items-center relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-600">
         <img src="assets/svg/arrow-white.svg" class="size-16">
-        ATENDIMENTOS<br />
+        ATENDIMENTOS<br/>
         REALIZADOS NAS UBSs
         <span
           class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-600"></span>
       </a>
       <a href="#procurar-ubs"
-        class="w-1/5 flex items-center p-5 relative xl:text-sm 2xl:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-500">
+        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-500">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         QUANDO PROCURAR<br />
         UMA UBS
@@ -72,7 +71,7 @@
           class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-500"></span>
       </a>
       <a href="#realizados-he"
-        class="w-1/5 flex items-center p-5 relative xl:text-sm 2xl:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-400">
+        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-400">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         ATENDIMENTOS<br />
         REALIZADOS NO HE
@@ -80,7 +79,7 @@
           class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-400"></span>
       </a>
       <a href="#procurar-he"
-        class="w-1/5 flex items-center p-5 relative xl:text-sm 2xl:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-500">
+        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-500">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         QUANDO<br />
         PROCURAR O HE
@@ -88,22 +87,22 @@
           class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-500"></span>
       </a>
       <a href="#atendimentos-hca"
-        class="w-1/5 flex items-center p-5 relative xl:text-sm 2xl:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-700">
+        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-700">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         ATENDIMENTOS<br />
         REALIZADOS NO HCA
         <span
-          class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
+          class="hidden lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
       </a>
     </nav>
     <!--inicio do main-->
     <main class="w-full">
       <!--imagem medica-->
-      <img src="assets/fundo-section.png" alt="imagem da médica segurando o bebe" class="w-full">
+      <img src="assets/fundo-section.png" alt="imagem da médica segurando o bebe" class="w-full ">
       <!--mensagem fundo azul-->
       <div class="w-full flex-auto bg-sky-900 flex items-center gap-5 p-8">
-        <img src="assets/svg/arrow-white.svg" class="size-24">
-        <p class="text-left text-white text-lg font-bold"> O Governo do
+        <img src="assets/svg/arrow-white.svg" class="size-24 hidden lg:visible">
+        <p class=" text-white text-justify leading-tight lg:text-lg font-bold"> O Governo do
           Estado está trabalhando para ampliar e melhorar o sistema de saúde
           do Amapá. E para que o atendimento seja ainda mais eficiente, é
           preciso que você
@@ -113,23 +112,23 @@
       </div>
     </main>
     <!--primeira section -->
-    <section class="flex" id="procurar-ubs">
-      <div class="w-1/2  py-10 flex flex-col gap-6 bg-yellow-600">
-        <p class="border mx-20 border-white p-5 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row " id="procurar-ubs">
+      <div class="lg:w-1/2  py-10 flex flex-col gap-6 bg-yellow-600">
+        <p class="border mx-5 lg:mx-20 border-white p-5 text-white font-bold  lg:text-xl">
           UNIDADE BÁSICA DE SAÚDE – UBS<br />
           HORÁRIO DE ATENDIMENTO: DE SEGUNDA A SEXTA, DAS 8H ÀS 19H.
         </p>
-        <div class="flex gap-3 items-center pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-24">
+        <div class="flex gap-3 items-center px-3">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-24">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-blue-950 text-3xl font-bold">
+          <h2 class="text-blue-950 text-2xl font-black lg:text-3xl">
             ATENDIMENTOS<br />
             REALIZADOSNAS UBSs:
           </h2>
         </div>
-        <ul class="border mx-20 border-white text-lg font-semibold text-white px-10 py-5  list-disc">
+        <ul class="border mx-5 lg:mx-20 border-white lg:text-lg font-semibold text-white px-10 py-5  list-disc">
           <li>Consultas médicas e multiprofissional (enfermagem, nutrição,
             psicologia, etc) </li>
           <li>Inalações </li>
@@ -143,19 +142,19 @@
           <li>Fornecimento de medicação básica</li>
         </ul>
       </div>
-      <div class="w-1/2 py-10 flex flex-col gap-6 bg-yellow-500 ">
-        <div class="flex gap-3 items-center pt-28 pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-24">
+      <div class="lg:w-1/2 py-10 flex flex-col gap-6 bg-yellow-500 ">
+        <div class="flex gap-3 items-center lg:pt-28 px-3">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-24">
 
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-blue-950 text-3xl font-bold">
+          <h2 class="text-blue-950 text-xl lg:text-3xl font-black">
             QUANDO PROCURAR<br />
             UMA UBS
           </h2>
         </div>
-        <div class="border mx-20 border-white  text-lg font-semibold text-white px-10 py-3">
+        <div class="border mx-5 lg:mx-20 border-white  lg:text-lg font-semibold text-white px-10 py-3">
           <strong>ATENDIMENTO PARA PACIENTES COM SINTOMAS NÃO GRAVES</strong>
           <ul class=" list-disc">
             <li>Consultas médicas e multiprofissional</li>
@@ -174,25 +173,25 @@
       </div>
     </section>
     <!--imagens ubs section-->
-    <div class="w-full p-12 bg-sky-900 flex gap-5 border-b-8 border-b-zinc-900">
+    <div class="overflow-x-scroll overscroll-none w-full p-12 bg-sky-900 flex gap-5 border-b-8 border-b-zinc-900">
       <img src="assets/img-2.png" class="w-2/3 ">
       <img src="assets/img-3.png" class="w-2/3">
       <img src="assets/img-4.png" class="w-2/3">
     </div>
     <!--segundo section-->
-    <section class="flex" id="realizados-he">
-      <div class="relative w-1/2  py-10 flex flex-col gap-6 bg-emerald-400">
-        <div class="flex gap-3 items-center pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-24">
+    <section class="flex flex-col lg:flex-row" id="realizados-he">
+      <div class="relative lg:w-1/2 py-10 flex flex-col gap-6 bg-emerald-400">
+        <div class="flex gap-3 items-center px-3">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-24">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-3xl font-bold">
+          <h2 class="text-white text-xl lg:text-3xl font-black">
             ATENDIMENTOS<br />
             REALIZADOS NO HE
           </h2>
         </div>
-        <ul class="border border-white text-lg mx-20 text-white px-10 py-3  list-disc">
+        <ul class="border border-white leading-normal lg:text-lg mx-5 lg:mx-20 text-white px-10 py-3 list-disc">
           <li> Urgência e emergência</li>
           <li> Exames de diagnóstico por imagem para pacientes internados e em
             observação(raio-x, tomografia, ultrassonografia,
@@ -205,10 +204,10 @@
           <li> Atendimento em casos de urgência em saúde mental</li>
         </ul>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-400"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-400"></span>
       </div>
-      <div class="w-1/2 flex items-center justify-center bg-sky-900 ">
-        <img src="assets/img-1.png" class="w-3/4 h-96">
+      <div class="lg:w-1/2 py-5 flex items-center justify-center bg-sky-900 ">
+        <img src="assets/img-1.png" class="w-3/4 lg:h-96">
       </div>
     </section>
     <!--terceiro section-->
