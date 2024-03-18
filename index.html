@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +26,14 @@
   </script>
   <title>hotsite</title>
 </head>
-
 <body class="font-Inter text-white box-border">
   <!--div container-->
-  <div class="lg:container flex flex-1 flex-col lg:mx-auto lg:max-w-full">
+  <div class="container flex flex-col lg:mx-auto lg:max-w-full">
     <!--inicio do header-->
     <header class="lg:w-full lg:py-5 flex flex-col lg:flex-row bg-sky-800 lg:justify-between lg:items-center ">
       <!--h1 principal header-->
       <div>
-        <div class="flex justify-end p-1">
+        <div class="visible lg:invisible flex justify-end p-1">
           <button><img src="assets/svg/face.svg" alt="facebook"></button>
           <button><img src="assets/svg/insta.svg" alt="instagran"></button>
           <button><img src="assets/svg/twiter.svg" alt="twiter"></button>
@@ -49,7 +47,7 @@
       <!--logo governo amapa-->
 
       <a href="#" class="mx-auto size-60 relative bg-white rounded-full shadow-2xl shadow-black">
-        <img src="./assets/icons/logo-amapa.png" class="size-40 mt-8 mx-auto">
+        <img src="./assets/icons/logo-amapa.png" class="size-40 mt-8 lg:mt-1 mx-auto">
         <img src="./assets/icons/cursor.png" class="absolute size-16 -right-6 lg:right-[-60px] bottom-3 lg:bottom-0"> 
       </a>
 
@@ -121,10 +119,10 @@
     <!--inicio do main-->
     <main class="w-full">
       <!--imagem medica-->
-      <img src="assets/img-main.jpg" alt="imagem da médica segurando o bebe" class="w-full ">
+      <img src="assets/fundo-section.png" alt="imagem da médica segurando o bebe" class="w-full ">
       <!--mensagem fundo azul-->
       <div class="w-full flex-auto bg-sky-900 flex items-center gap-5 p-8">
-        <img src="assets/svg/arrow-white.svg" class="size-24 hidden lg:visible">
+        <img src="assets/svg/arrow-white.svg" class="size-24 invisible lg:visible">
         <p class=" text-white text-justify leading-tight lg:text-lg font-bold"> O Governo do
           Estado está trabalhando para ampliar e melhorar o sistema de saúde
           do Amapá. E para que o atendimento seja ainda mais eficiente, é
@@ -312,7 +310,7 @@
         </ul>
       </div>
       <div class="lg:w-1/2 py-10 flex flex-col gap-6 bg-emerald-800 ">
-        <div class="flex gap-3 items-center pt-28 pl-5">
+        <div class="flex gap-3 items-center lg:pt-28 pl-5">
           <img src="assets/svg/arrow-yelow.svg" class="lg:size-24">
           <span class="bg-yellow-500 rounded-full">
             <img src="assets/svg/fone.svg">
@@ -321,7 +319,7 @@
             EXAMES:
           </h2>
         </div>
-        <div class="border mx-20 border-white  text-lg font-semibold text-white px-10 py-3">
+        <div class="border mx-5 lg:mx-20 border-white  text-lg font-semibold text-white px-10 py-3">
           <ul class=" list-disc">
             <li>Eletrocardiograma</li>
             <li>Laboratoriais (urgência e rotina)</li>
@@ -336,13 +334,13 @@
       <img src="assets/img-9.png" class="w-2/3">
     </div>
     <!--quinta section-->
-    <section class="flex" id="atendimentos-hca">
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-emerald-400">
-        <p class="border border-white mx-20 p-5 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row" id="atendimentos-hca">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-emerald-400">
+        <p class="border border-white mx-5 lg:mx-20 p-5 text-white font-bold text-xl">
           HOSPITAL DE CLÍNICAS ALBERTO LIMA - HCAL
         </p>
         <div class="flex gap-3 items-center px-7">
-          <img src="assets/svg/arrow-blue.svg" class="size-24">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-24">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
@@ -351,7 +349,7 @@
             REALIZADOS NO HCAL:<br />
           </h2>
         </div>
-        <ul class="border border-white text-lg font-semibold text-white px-10 mx-20 py-5  list-disc">
+        <ul class="border border-white text-lg font-semibold text-white px-10 mx-5 lg:mx-20 py-5  list-disc">
           <li> Consultas especializadas ambulatoriais, previamente
             agendadas</li>
           <li> Internações clínicas e cirúrgicas</li>
@@ -364,15 +362,15 @@
           <li> Internação</li>
         </ul>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-400"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-400"></span>
       </div>
-      <div class="w-1/2 flex items-center justify-center bg-sky-900 ">
-        <img src="assets/img-10.png" class="w-3/4 h-96">
+      <div class="lg:w-1/2 p-5 flex items-center justify-center bg-sky-900 ">
+        <img src="assets/img-10.png" class="lg:w-3/4 lg:h-96">
       </div>
     </section>
     <!--sexta section 3 colunas -->
-    <section class="flex border-t-8 border-zinc-900" id="hospital-mulher">
-      <div class="w-2/6 relative py-16 flex flex-col gap-6 bg-yellow-600">
+    <section class="flex flex-col lg:flex-row border-t-8 border-zinc-900" id="hospital-mulher">
+      <div class="lg:w-2/6 relative py-16 flex flex-col gap-6 bg-yellow-600">
         <p class="border border-white mx-10 p-5 text-white font-bold lg:text-sm">
           HOSPITAL DA MULHER MÃE LUZIA – HMML
         </p>
@@ -392,10 +390,10 @@
           <li> Assistência ao parto (parto normal e cesariano)</li>
         </ul>
         <span
-          class="absolute left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-600"></span>
+          class="absolute z-50 left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-600"></span>
       </div>
-      <div class="w-2/6 relative py-5 flex flex-col gap-6 bg-yellow-500">
-        <div class="flex gap-3 items-center pt-32 pl-5">
+      <div class="lg:w-2/6 relative py-5 flex flex-col gap-6 bg-yellow-500">
+        <div class="flex gap-3 items-center lg:pt-32 pl-5">
           <img src="assets/svg/arrow-blue.svg" class="lg:size-16">
           <div class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg" class="lg:size-20">
@@ -413,10 +411,10 @@
           </ul>
         </div>
         <span
-          class="absolute left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-500"></span>
+          class="absolute z-50 left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-500"></span>
       </div>
-      <div class="w-2/6 relative py-5 flex flex-col gap-6 bg-yellow-600 ">
-        <div class="flex gap-3 items-center pt-32 pl-5">
+      <div class="lg:w-2/6 relative py-5 flex flex-col gap-6 bg-yellow-600 ">
+        <div class="flex gap-3 items-center lg:pt-32 pl-5">
           <img src="assets/svg/arrow-blue.svg" class="lg:size-16">
           <div class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg" class="lg:size-20">
@@ -446,16 +444,17 @@
       <img src="assets/img-11.png" class="w-2/3">
     </div>
     <!--setima section-->
-    <section class="flex" id="hospital-crianca">
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-600">
-        <p class="border border-white mx-20 p-5 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row" id="hospital-crianca">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-600">
+        <p class="border border-white mx-5 lg:mx-20 p-5 text-white font-bold text-xl">
           HOSPITAL DA CRIANÇA E ADOLESCENTE – HCA<br />
-          <span class="text-base font-medium">ATENDIMENTO DE PACIENTES DE 29
+          <span class="text-base font-medium">
+            ATENDIMENTO DE PACIENTES DE 29
             DIAS DE VIDA A 17 ANOS, 11 MESES E 29
             DIAS.</span>
         </p>
-        <div class="flex gap-3 items-center px-7">
-          <img src="assets/svg/arrow-blue.svg" class="size-24">
+        <div class="flex gap-3 items-center px-3">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-24">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
@@ -464,7 +463,7 @@
             NO HCA:<br />
           </h2>
         </div>
-        <ul class="border border-white text-lg font-semibold text-white px-10 mx-20 py-5  list-disc">
+        <ul class="border border-white lg:text-lg lg:font-semibold text-white px-10 mx-5 lg:mx-20 py-5  list-disc">
           <li>Internação Hospitalar</li>
           <li>Atendimento de Urgência e Emergência Infantil</li>
           <li>Realização de Cirurgias</li>
@@ -482,29 +481,29 @@
             especiais);</li>
         </ul>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-yellow-600"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-yellow-600"></span>
       </div>
-      <div class="w-1/2 flex items-center justify-center bg-sky-900 ">
-        <img src="assets/img-10.png" class="w-3/4 h-96">
+      <div class="lg:w-1/2 flex items-center justify-center bg-sky-900 ">
+        <img src="assets/img-10.png" class="lg:w-3/4 lg:h-96">
       </div>
     </section>
     <!--oitava section-->
-    <section class="flex" id="hospital-santana">
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-emerald-700">
-        <p class="border border-white mx-20 p-5 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row" id="hospital-santana">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-emerald-700">
+        <p class="border border-white mx-5 lg:mx-20 p-3 lg:p-5 text-white font-bold text-xl">
           HOSPITAL ESTADUAL DE SANTANA
         </p>
-        <div class="flex gap-3 items-center px-7">
-          <img src="assets/svg/arrow-yelow.svg" class="size-24">
+        <div class="flex gap-3 items-center px-5">
+          <img src="assets/svg/arrow-yelow.svg" class="lg:size-24">
           <span class="bg-yellow-500 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl font-bold ">
+          <h2 class="text-white text-xl lg:text-2xl font-bold ">
             ATENDIMENTOS REALIZADOS<br />
             HOSPITAL ESTADUAL DE SANTANA:<br />
           </h2>
         </div>
-        <ul class="border border-white text-lg font-semibold text-white px-10 mx-20 py-5  list-disc">
+        <ul class="border border-white lg:text-lg lg:font-semibold text-white px-10 mx-5 lg:mx-20 py-5  list-disc">
           <li>Urgência e emergência (Clínica e trauma)</li>
           <li>Consultas especializadas ambulatoriais (Adulto, Pediatria e
             Obstetrícia)</li>
@@ -516,29 +515,29 @@
           <li> Atendimento em nefrologia (hemodiálise)</li>
         </ul>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-700"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-700"></span>
       </div>
-      <div class="w-1/2 flex items-center justify-center bg-emerald-800">
-        <img src="assets/img-12.png" class="w-3/4 h-96">
+      <div class="lg:w-1/2 flex items-center justify-center bg-emerald-800">
+        <img src="assets/img-12.png" class=" w-full lg:w-3/4 lg:h-96">
       </div>
     </section>
     <!--nona section-->
-    <section class="flex" id="hospital-porto">
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-sky-800">
-        <p class="border border-white mx-20 p-5 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row" id="hospital-porto">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-sky-800">
+        <p class="border border-white mx-5 lg:mx-20 p-3 lg:p-5 text-white font-bold text-base lg:text-xl">
           HOSPITAL ESTADUAL DE PORTO GRANDE
         </p>
-        <div class="flex gap-3 items-center px-7">
-          <img src="assets/svg/arrow-yelow.svg" class="size-24">
+        <div class="flex gap-3 items-center px-3">
+          <img src="assets/svg/arrow-yelow.svg" class="lg:size-24">
           <span class="bg-yellow-500 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl font-bold ">
+          <h2 class="text-white text-xl lg:text-2xl font-bold ">
             ATENDIMENTOS REALIZADOS<br />
             HOSPITAL ESTADUAL DE PORTO GRANDE:<br />
           </h2>
         </div>
-        <ul class="border border-white text-lg font-semibold text-white px-10 mx-20 py-5  list-disc">
+        <ul class="border border-white text-sm lg:text-lg font-semibold text-white px-10 mx-5 lg:mx-20 py-5 list-disc">
           <li>Urgência e emergência (Clínica e trauma)</li>
           <li> Internações em clínicas médica, obstétrica e pediátrica
             (clínica e
@@ -548,20 +547,20 @@
             Ultrassonografia)</li>
         </ul>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-sky-800"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-sky-800"></span>
       </div>
-      <div class="w-1/2 flex items-center justify-center bg-sky-900">
-        <img src="assets/img-12.png" class="w-3/4 h-96">
+      <div class="lg:w-1/2 flex items-center justify-center bg-sky-900">
+        <img src="assets/img-12.png" class="w-full lg:w-3/4 lg:h-96">
       </div>
     </section>
     <!--section 10-->
-    <section class="flex border-t-8 border-zinc-900" id="hospital-oiapoque">
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-600">
-        <p class="border border-white mx-10 p-3 text-white font-bold text-xl">
+    <section class="flex flex-col lg:flex-row border-t-8 border-zinc-900" id="hospital-oiapoque">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-600">
+        <p class="border border-white mx-5 lg:mx-10 p-3 text-white font-bold lg:text-xl">
           HOSPITAL ESTADUAL DE OIAPOQUE - HEO
         </p>
         <div class="flex gap-2 items-center px-3">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
@@ -573,8 +572,8 @@
             COM AGENDAMENTO E ENCAMINHAMENTO:
           </h2>
         </div>
-        <div class="border border-white text-base font-semibold text-white px-10 mx-10 py-5">
-          <ul class="w-1/2 list-disc">
+        <div class="border border-white text-base font-semibold text-white px-10 mx-5 lg:mx-10 py-5">
+          <ul class="lg:w-1/2 list-disc">
             <li> Ortopedia</li>
             <li> Cirurgia Geral</li>
             <li> Ginecologia Cirúrgica</li>
@@ -583,9 +582,9 @@
         <span
           class="absolute z-50 left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-600"></span>
       </div>
-      <div class="w-1/2 relative py-5 flex flex-col gap-6 bg-yellow-500">
-        <div class="flex gap-3 items-center pt-24 pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+      <div class="lg:w-1/2 relative py-5 flex flex-col gap-6 bg-yellow-500">
+        <div class="flex gap-3 items-center lg:pt-24 pl-5">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
@@ -593,7 +592,7 @@
             ATENDIMENTO CIRÚRGICO:
           </h2>
         </div>
-        <div class="border mx-10 border-white text-base font-semibold text-white px-10 py-3">
+        <div class="border mx-5 lg:mx-10 border-white text-base font-semibold text-white px-10 py-3">
           <ul class=" list-disc">
             <li> Cirurgia Geral</li>
             <li> Cirurgia ortopédica de baixa complexidade</li>
@@ -604,29 +603,28 @@
         <span
           class="absolute left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-yellow-500"></span>
       </div>
-
     </section>
     <!--imagens das gravidas-->
-    <div class="overflow-x-scroll overscroll-none w-full px-12 py-16 justify-center bg-sky-800 flex gap-5">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
+    <div class="overflow-x-scroll overscroll-none w-full px-12 py-16 bg-sky-800 flex gap-5">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
     </div>
     <!--section 11-->
-    <section class="flex" id="urgencia-emergencia">
-      <div class="w-1/2 relative pt-10 flex flex-col gap-6 bg-yellow-600">
+    <section class="flex flex-col lg:flex-row" id="urgencia-emergencia">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-600">
         <div class="flex gap-3 items-center px-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl font-bold ">
+          <h2 class="text-white text-xl lg:text-2xl font-bold ">
             ATENDIMENTO DE URGÊNCIA<br>
             E EMERGÊNCIA:
           </h2>
         </div>
-        <div class="border flex border-white text-base font-semibold text-white px-10 mx-10 py-5">
+        <div class="border flex border-white text-base font-semibold text-white  mx-5 px-10 lg:mx-10 py-5">
           <ul class="w-1/2 list-disc">
             <li> Clínico</li>
             <li> Pediátrico</li>
@@ -639,17 +637,17 @@
           </ul>
         </div>
       </div>
-      <div class="w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-500">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-6 bg-yellow-500">
         <div class="flex gap-3 items-center  pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
-          <span class="bg-blue-950 rounded-full">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
+          <span class="bg-blue-950 rounded-full size-24">
             <img src="assets/svg/fone.svg">
           </span>
           <h2 class="text-white text-2xl font-bold">
             EXAMES:
           </h2>
         </div>
-        <div class="border mx-10 border-white text-lg font-semibold text-white px-10 py-3">
+        <div class="border mx-5 lg:mx-10 border-white text-lg font-semibold text-white px-10 py-3">
           <ul class=" list-disc">
             <li>Eletrocardiograma</li>
             <li>Ultrassonografia</li>
@@ -663,22 +661,23 @@
       <img src="assets/img-14.png" class="w-full">
     </section>
     <!--section 12-->
-    <section class="flex" id="hospital-jari">
-      <div class="w-1/2 relative py-10 flex flex-col gap-4 bg-emerald-500">
-        <p class="border border-white mx-10 p-3 text-white font-bold text-lg">
+    <section class="flex flex-col lg:flex-row" id="hospital-jari">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-4 bg-emerald-500">
+        <p class="border border-white mx-5 lg:mx-10 p-3 text-white font-bold text-lg">
           HOSPITAL ESTADUAL DE LARANJAL DO JARI – HELAJA (24H)
         </p>
-        <div class="flex gap-2 items-center px-3">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+        <div class="flex gap-2 items-center py-5 px-3">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl leading-5 font-bold ">
-            <span class="text-sky-900 text-xl font-extrabold ">ATENDIMENTO REALIZADOS NO HELAJA</span><br />
+          <h2 class="text-white text-sm lg:text-2xl lg:leading-5 font-black ">
+            <span class="text-sky-900 text-xl font-black ">
+              ATENDIMENTO REALIZADOS NO HELAJA</span><br />
             ATENDIMENTO AMBULATORIAL:
           </h2>
         </div>
-        <div class="border flex border-white text-base font-semibold text-white px-10 mx-10 py-5">
+        <div class="border flex border-white text-base font-semibold text-white px-10 mx-5 lg:mx-10 py-5">
           <ul class="w-1/2 list-disc">
             <li> Pediatria</li>
             <li> Ortopedia</li>
@@ -692,9 +691,9 @@
         <span
           class="absolute z-50 left-10 -bottom-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-emerald-500"></span>
       </div>
-      <div class="w-1/2 relative py-5 flex flex-col gap-4 bg-emerald-600">
-        <div class="flex gap-3 items-center pt-20 pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+      <div class="lg:w-1/2 relative py-5 flex flex-col gap-4 bg-emerald-600">
+        <div class="flex gap-3 items-center pt-10 lg:pt-20 pl-5">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
@@ -702,7 +701,7 @@
             ATENDIMENTO CIRÚRGICO:
           </h2>
         </div>
-        <div class="border mx-10 border-white text-base font-semibold text-white px-10 py-3">
+        <div class="border mx-5 lg:mx-10 border-white text-base font-semibold text-white px-10 py-3">
           <ul class=" list-disc">
             <li> Cirurgia Geral</li>
             <li> Cirurgia ortopédica de baixa complexidade</li>
@@ -715,21 +714,21 @@
       </div>
     </section>
     <!--imagens das gravidas-->
-    <div class="w-full px-12 py-16 justify-center bg-sky-800 flex gap-5">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
-      <img src="assets/img-15.png" class="w-1/4">
+    <div class="overflow-x-scroll overscroll-none w-full px-12 py-16 justify-center bg-sky-800 flex gap-5">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
+      <img src="assets/img-15.png" class="lg:w-1/4">
     </div>
     <!--section 13-->
-    <section class="flex" id="urgencia">
-      <div class="w-1/2 relative py-10 flex flex-col gap-4 bg-emerald-600">
+    <section class="flex flex-col lg:flex-row" id="urgencia">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-4 bg-emerald-600">
         <div class="flex gap-2 items-center px-3">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl leading-5 font-bold ">
+          <h2 class="text-white text-2xl lg:leading-5 font-bold ">
             ATENDIMENTO DE URGÊNCIA<br />
             E EMERGÊNCIA:
           </h2>
@@ -749,10 +748,10 @@
         <span
           class="absolute z-50 right-20 -top-7 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[30px] border-b-emerald-600"></span>
       </div>
-      <div class="w-1/2 relative py-5 flex flex-col gap-4 bg-emerald-400">
+      <div class="lg:w-1/2 relative py-5 flex flex-col gap-4 bg-emerald-400">
         <div class="flex gap-3 items-center pt-5 pl-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
-          <span class="bg-blue-950 rounded-full">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
+          <span class="bg-blue-950 size-24 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
           <h2 class="text-white text-xl font-bold">
@@ -774,17 +773,17 @@
       </div>
     </section>
     <!--section 14-->
-    <section class="flex" id="unidade-mista">
-      <div class="w-1/2 relative py-10 flex flex-col gap-3 bg-yellow-600">
+    <section class="flex flex-col lg:flex-row" id="unidade-mista">
+      <div class="lg:w-1/2 relative py-10 flex flex-col gap-3 bg-yellow-600">
         <p class="border border-white mx-10 p-3 text-white font-bold text-lg">
           UNIDADE MISTA DE SAÚDE - UMS
         </p>
         <div class="flex gap-3 items-center px-5">
-          <img src="assets/svg/arrow-blue.svg" class="size-20">
+          <img src="assets/svg/arrow-blue.svg" class="lg:size-20">
           <span class="bg-blue-950 rounded-full">
             <img src="assets/svg/fone.svg">
           </span>
-          <h2 class="text-white text-2xl font-bold ">
+          <h2 class="text-white lg:text-2xl font-bold ">
             ATENDIMENTOS REALIZADO<br />
             NAS UNIDADES MISTAS DE SAÚDE<br />
           </h2>
@@ -809,12 +808,12 @@
           </ul>
         </div>
         <span
-          class="absolute -right-8 top-5 w-0 h-0 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-yellow-600"></span>
+          class="hidden lg:visible absolute -right-8 top-5 w-0 h-0 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-yellow-600"></span>
         <span
-          class="absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-yellow-600"></span>
+          class="hidden lg:visible absolute right-[-40px] top-1/2 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-yellow-600"></span>
       </div>
-      <div class="w-1/2 flex flex-col bg-sky-900 ">
-        <div class="bg-yellow-500 px-12 py-5 font-bold text-sm">
+      <div class="lg:w-1/2 flex flex-col bg-sky-900 ">
+        <div class="bg-yellow-500 px-12 py-5 lg:font-bold lg:text-sm">
           <p>As Unidades Mistas de saúde prestam atendimento de média complexidade e integral à saúde,
             com unidade de internação. A assistência médica é permanente e dispõe de urgência e emergência
             para estabilizar os pacientes e se necessário encaminhar para o hospital de referência na capital.
@@ -825,30 +824,33 @@
     </section>
     <!--rodape pagina footer -->
     <footer class="w-full bg-sky-800 ">
-      <div class="flex">
+      <div class="flex flex-col lg:flex-row">
         <!--menu header redondo-->
-        <nav class="w-[40%] flex items-center justify-center gap-5">
-          <a href="#atendimento-upa" class=" size-32 rounded-full bg-teal-500 flex justify-center items-center">
-            <img src="./assets/svg/agenda.svg" alt="#">
+        <nav class="mx-3 py-6 flex flex-row gap-3">
+          <a href="#urgencia-emergencia"
+            class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white">
+            <img src="./assets/svg/monitor.svg" class="size-16">
           </a>
-          <a href="#procurar-he" class="size-32 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/svg/remedios.svg" alt="#">
+          <a href="#hospital-santana"
+            class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white"><img
+              src="./assets/svg/localizacao.svg" class="size-16">
           </a>
-          <a href="#urgencia-emergencia" class="size-32 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/svg/trasnporte.svg" alt="#">
+          <a href="#procurar-ubs"
+            class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white"><img
+              src="./assets/svg/ficha.svg" class="size-16">
           </a>
-          <a href="#hospital-mulher" class="size-32 rounded-full bg-teal-500 flex justify-center items-center"><img
-              src="./assets/svg/atendimento.svg" alt="#">
+          <a href="#unidade-mista"
+            class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white"><img
+              src="./assets/svg/cadastro.svg" class="size-16">
           </a>
         </nav>
         <!--logo governo amapa-->
-        <div class="mx-auto py-3 flex items-center justify-center">
-          <div class="size-64 relative bg-slate-50 rounded-full flex justify-center items-center">
-            <img src="./assets/icons/logo-amapa.png" alt="logo do GEA" class="size-40">
-            <img src="./assets/icons/cursor.png" class="absolute right-[-60px] bottom-0">
-          </div>
-        </div>
-        <div class="w-[40%] flex justify-center">
+        <a href="#" class="mx-auto size-60 relative bg-white rounded-full shadow-2xl shadow-black">
+          <img src="./assets/icons/logo-amapa.png" class="size-40 mt-8 mx-auto">
+          <img src="./assets/icons/cursor.png" class="absolute size-16 -right-6 lg:right-[-60px] bottom-3 lg:bottom-0"> 
+        </a>
+
+        <div class="flex justify-end py-3">
           <button><img src="assets/svg/face.svg" alt="facebook"></button>
           <button><img src="assets/svg/insta.svg" alt="instagran"></button>
           <button><img src="assets/svg/twiter.svg" alt="twiter"></button>
