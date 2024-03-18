@@ -8,6 +8,7 @@ module.exports = {
       },
       fontFamily: {
         Inter: 'Inter, sans-serif',
+        Sigmar: 'Sigmar, sans-serif'
       }
     },
   },
