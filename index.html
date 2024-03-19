@@ -26,19 +26,19 @@
   </script>
   <title>hotsite</title>
 </head>
-<body class="font-Inter text-white box-border">
+<body class="font-Inter text-white m-0 p-0 box-border">
   <!--div container-->
-  <div class="container flex flex-col lg:mx-auto lg:max-w-full">
+  <div class="container flex flex-col lg:mx-auto md:max-w-full">
     <!--inicio do header-->
-    <header class="lg:w-full lg:py-5 flex flex-col lg:flex-row bg-sky-800 lg:justify-between lg:items-center ">
+    <header class="lg:w-full lg:py-5 flex flex-col lg:flex-row bg-sky-800 lg:justify-around lg:items-center ">
       <!--h1 principal header-->
       <div>
-        <div class="visible lg:invisible flex justify-end p-1">
+        <div class="lg:hidden flex justify-end p-1">
           <button><img src="assets/svg/face.svg" alt="facebook"></button>
           <button><img src="assets/svg/insta.svg" alt="instagran"></button>
           <button><img src="assets/svg/twiter.svg" alt="twiter"></button>
         </div>
-        <h1 class="w-96 py-5 mx-auto text-4xl font-Sigmar lg:text-6xl  text-white uppercase">
+        <h1 class="w-96 py-5 mx-auto text-4xl font-Sigmar lg:text-4xl  text-white uppercase">
           SAIBA QUAL
           UNIDADE DE SAÚDE
           PROCURAR:
@@ -46,15 +46,15 @@
       </div>
       <!--logo governo amapa-->
 
-      <a href="#" class="mx-auto size-60 relative bg-white rounded-full shadow-2xl shadow-black">
-        <img src="./assets/icons/logo-amapa.png" class="size-40 mt-8 lg:mt-1 mx-auto">
-        <img src="./assets/icons/cursor.png" class="absolute size-16 -right-6 lg:right-[-60px] bottom-3 lg:bottom-0"> 
+      <a href="#" class=" mx-auto lg:mx-0 size-60 relative bg-white rounded-full shadow-2xl shadow-black">
+        <img src="./assets/icons/logo-amapa.png" class="size-40 mt-8 lg:mt-4 mx-auto">
+        <img src="./assets/icons/cursor.png" class="absolute size-16 -right-6 lg:right-[-40px] bottom-3 lg:bottom-5"> 
       </a>
 
 
       <!--menu header redondo-->
-
-      <nav class="mx-3 py-6 flex flex-row gap-3">
+      <div class="lg:flex lg:flex-col lg:pt-10">
+      <nav class=" mx-3 md:m-auto lg:mx-0 py-6 flex flex-row gap-3">
         <a href="#urgencia-emergencia"
           class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white">
           <img src="./assets/svg/monitor.svg" class="size-16">
@@ -72,58 +72,64 @@
             src="./assets/svg/cadastro.svg" class="size-16">
         </a>
       </nav>
+      <div class="hidden lg:flex lg:justify-end lg:p-1">
+        <button><img src="assets/svg/face.svg" alt="facebook"></button>
+        <button><img src="assets/svg/insta.svg" alt="instagran"></button>
+        <button><img src="assets/svg/twiter.svg" alt="twiter"></button>
+      </div>
+    </div>
     </header>
     <!--inicio do nav-->
     <nav class="w-full lg:flex">
       <a href="#atendimento-upa"
-        class="lg:w-1/5 flex lg:p-5 items-center relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-600">
+        class="lg:w-1/5 flex lg: items-center relative lg:text-base text-left font-bold leading-5 text-slate-50 bg-yellow-600">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         ATENDIMENTOS<br />
         REALIZADOS NAS UBSs
         <span
-          class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-600"></span>
+          class="invisible lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-600"></span>
       </a>
       <a href="#procurar-ubs"
-        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-yellow-500">
+        class="lg:w-1/5 flex items-center lg: relative lg:text-base text-left font-bold leading-5 text-slate-50 bg-yellow-500">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         QUANDO PROCURAR<br />
         UMA UBS
         <span
-          class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-500"></span>
+          class="invisible lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-yellow-500"></span>
       </a>
       <a href="#realizados-he"
-        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-400">
+        class="lg:w-1/5 flex items-center lg: relative lg:text-base text-left font-bold leading-5 text-slate-50 bg-emerald-400">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         ATENDIMENTOS<br />
         REALIZADOS NO HE
         <span
-          class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-400"></span>
+          class="invisible lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-400"></span>
       </a>
       <a href="#procurar-he"
-        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-500">
+        class="lg:w-1/5 flex items-center lg: relative lg:text-base text-left font-bold leading-5 text-slate-50 bg-emerald-500">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         QUANDO<br />
         PROCURAR O HE
         <span
-          class="absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-500"></span>
+          class="invisible lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-500"></span>
       </a>
       <a href="#atendimentos-hca"
-        class="lg:w-1/5 flex items-center lg:p-5 relative lg:text-xl text-left font-bold leading-5 text-slate-50 bg-emerald-700">
+        class="lg:w-1/5 flex items-center lg:p-2 relative lg:text-base text-left font-bold leading-5 text-slate-50 bg-emerald-700">
         <img src="assets/svg/arrow-white.svg" class="size-16">
         ATENDIMENTOS<br />
         REALIZADOS NO HCA
         <span
-          class="hidden lg:visible absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
+          class="invisible lg:visible z-50 absolute left-5 -bottom-6 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[25px] border-t-emerald-700"></span>
       </a>
     </nav>
     <!--inicio do main-->
     <main class="w-full">
       <!--imagem medica-->
-      <img src="assets/fundo-section.png" alt="imagem da médica segurando o bebe" class="w-full ">
+      <img src="assets/fundo-section.png" alt="imagem da médica segurando o bebe" class="w-full min-h-56">
       <!--mensagem fundo azul-->
-      <div class="w-full flex-auto bg-sky-900 flex items-center gap-5 p-8">
-        <img src="assets/svg/arrow-white.svg" class="size-24 invisible lg:visible">
-        <p class=" text-white text-justify leading-tight lg:text-lg font-bold"> O Governo do
+      <div class="w-full bg-sky-900 flex flex-col md:flex-row items-center lg:gap-5 md:p-8">
+        <img src="assets/svg/arrow-white.svg" class="lg:size-24 collapse md:visible">
+        <p class="p-9 text-white text-justify lg:leading-tight lg:text-lg font-bold"> O Governo do
           Estado está trabalhando para ampliar e melhorar o sistema de saúde
           do Amapá. E para que o atendimento seja ainda mais eficiente, é
           preciso que você
@@ -194,7 +200,7 @@
       </div>
     </section>
     <!--imagens ubs section-->
-    <div class="overflow-x-scroll overflow-hidden w-full p-12 bg-sky-900 flex gap-5 border-b-8 border-b-zinc-900">
+    <div class="overflow-x-scroll md:overflow-hidden w-full p-12 bg-sky-900 flex gap-5 border-b-8 border-b-zinc-900">
       <img src="assets/img-2.png" class="w-2/3 ">
       <img src="assets/img-3.png" class="w-2/3">
       <img src="assets/img-4.png" class="w-2/3">
@@ -273,9 +279,9 @@
         <span
           class="hidden lg:visible absolute right-[-41px] top-3/4 w-0 h-0 border-t-[40px] border-t-transparent border-b-[40px] border-b-transparent border-l-[40px] border-l-emerald-500"></span>
       </div>
-      <div class="lg:w-1/2 p-5 lg:pl-24 flex flex-col gap-10 items-start justify-center bg-sky-950 ">
-        <img src="assets/img-5.png" class="lg:w-3/4 lg:h-80">
-        <img src="assets/img-1.png" class="lg:w-3/4 lg:h-80">
+      <div class="lg:w-1/2 p-5 lg:pl-24 flex flex-col gap-10 md:items-center items-start justify-center bg-sky-950 ">
+        <img src="assets/img-5.png" class="md:w-3/4 md:h-80">
+        <img src="assets/img-1.png" class="md:w-3/4 md:h-80">
       </div>
     </section>
     <!--quarto section-->
@@ -328,7 +334,7 @@
       </div>
     </section>
     <!--imagens das upas-->
-    <div class="overflow-x-scroll overscroll-none w-full p-12 bg-sky-800 flex gap-5">
+    <div class="overflow-x-scroll md:overflow-hidden w-full p-12 bg-sky-800 flex gap-5">
       <img src="assets/img-7.png" class="w-2/3 ">
       <img src="assets/img-8.png" class="w-2/3">
       <img src="assets/img-9.png" class="w-2/3">
@@ -438,7 +444,7 @@
       </div>
     </section>
     <!--3 imagens medica-->
-    <div class="overflow-x-scroll overscroll-none w-full px-20 py-16 bg-sky-800 flex gap-7">
+    <div class="overflow-x-scroll md:overflow-hidden w-full px-20 py-16 bg-sky-800 flex gap-7">
       <img src="assets/img-11.png" class="w-2/3 ">
       <img src="assets/img-11.png" class="w-2/3">
       <img src="assets/img-11.png" class="w-2/3">
@@ -605,7 +611,7 @@
       </div>
     </section>
     <!--imagens das gravidas-->
-    <div class="overflow-x-scroll overscroll-none w-full px-12 py-16 bg-sky-800 flex gap-5">
+    <div class="overflow-x-scroll md:overflow-hidden w-full px-12 py-16 bg-sky-800 flex gap-5">
       <img src="assets/img-15.png" class="lg:w-1/4">
       <img src="assets/img-15.png" class="lg:w-1/4">
       <img src="assets/img-15.png" class="lg:w-1/4">
@@ -714,7 +720,7 @@
       </div>
     </section>
     <!--imagens das gravidas-->
-    <div class="overflow-x-scroll overscroll-none w-full px-12 py-16 justify-center bg-sky-800 flex gap-5">
+    <div class="overflow-x-scroll md:overflow-hidden w-full px-12 py-16 justify-center bg-sky-800 flex gap-5">
       <img src="assets/img-15.png" class="lg:w-1/4">
       <img src="assets/img-15.png" class="lg:w-1/4">
       <img src="assets/img-15.png" class="lg:w-1/4">
@@ -826,7 +832,7 @@
     <footer class="w-full bg-sky-800 ">
       <div class="flex flex-col lg:flex-row">
         <!--menu header redondo-->
-        <nav class="mx-3 py-6 flex flex-row gap-3">
+        <nav class="mx-3 md:m-auto py-6 flex flex-row gap-3">
           <a href="#urgencia-emergencia"
             class="w-[90px] h-[85px] rounded-full bg-teal-400 flex justify-center items-center shadow-2xl shadow-black border-2 border-white">
             <img src="./assets/svg/monitor.svg" class="size-16">
